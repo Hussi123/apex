@@ -1,0 +1,124 @@
+// Log section start
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: #7a7a7a28;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7A7A7A;
+  border-radius: 100px;
+}
+
+.log-wrap {
+  border-radius: 1.5em;
+
+  .log__content-wrap {
+    padding: 24px;
+    height: 880px;
+    overflow: hidden;
+    width: 100%;
+
+    .log__content-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #ffffff08;
+      width: 100%;
+      margin-bottom: 24px;
+
+      .log__content-tab {
+        height: 40px;
+        padding: 4px 24px;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--font-from-binance, #D2D4D7);
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+
+
+      }
+
+      [data-tab-target].active {
+        background: var(--binance-color, linear-gradient(90deg, #F8D239 0%, #F0B90B 100%));
+        color: var(--unnamed, #29313D);
+        animation: anime 0.2s linear;
+      }
+
+    }
+
+
+    .log__error {
+      padding-top: 24px;
+      padding: 0;
+      overflow: auto;
+      height: 800px;
+      width: 100%;
+
+      &-content {
+        display: none;
+
+        .log__error-text {
+          color: var(--font-from-binance, #D2D4D7);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 140%;
+        }
+
+      }
+
+      [data-tab-content].active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        animation: anime 0.2s linear;
+      }
+    }
+  }
+
+  background: var(--unnamed, #29313D);
+}
+
+// log section end
+
+
+
+// log section media start
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 550px) {
+
+  .log-wrap .log__content-wrap {
+    padding: 12px 10px;
+  }
+
+  .log-wrap .log__content-wrap .log__content-top {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 13px;
+  }
+
+  .log-wrap .log__content-wrap .log__error .log__error-text {
+    font-size: 10px;
+  }
+}
+// log section media end

@@ -1,0 +1,118 @@
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+// :root {
+//   --primary-color: #29313D;
+//   --secondary-color: #ffffff;
+//   --background-color: #21272F;
+//   --light-color: #58D299;
+//   --IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
+// }
+
+
+
+
+// info section start 
+.content-wrap {
+  margin-top: 1.5em;
+  display: flex;
+  gap: 1.5em;
+}
+
+.content-info {
+  width: 100%;
+  border-radius: 1.5em;
+  background: var(--background-color);
+
+  .title {
+    padding: 1.5em;
+    border-bottom: 1px solid #29313D;
+    color: var(--font-from-binance, #D2D4D7);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .content-info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5em;
+    gap: 11px;
+    white-space: nowrap;
+
+
+    .content-info-card {
+      padding: 12px 0;
+      border-radius: 12px;
+      background: var(--primary-color);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-width: 280px;
+      height: 84px;
+
+      span {
+        color: var(--font-from-binance, #D2D4D7);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 6px;
+      }
+
+      b {
+        color: var(--font-from-binance, #D2D4D7);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+// info section end
+
+// info section media start
+@media (max-width:1650px) {
+  .content-info .content-info-cards {
+    justify-content: start;
+  }
+}
+
+@media (max-width:1350px) {
+  .content-info .content-info-cards .content-info-card {
+    width: 49%;
+  }
+}
+
+@media (max-width:768px) {
+  .content-wrap {
+    margin-top: -30px;
+  }
+
+  .content-info {
+    background: var(--primary-color);
+
+    .title {
+      padding: 18px 18px 0;
+    }
+
+    .content-info-cards {
+      padding: 0 18px 18px;
+      flex-direction: column;
+      align-items: start;
+      text-align: start;
+
+      .content-info-card {
+        border-bottom: 1px solid #21272F;
+        // background: red;
+        width: 100%;
+        align-items: start;
+      }
+    }
+  }
+}
+// info section media end

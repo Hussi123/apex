@@ -1,0 +1,166 @@
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+// :root {
+//   --primary-color: #29313D;
+//   --secondary-color: #ffffff;
+//   --background-color: #21272F;
+//   --light-color: #58D299;
+//   --IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
+// }
+
+// setting section start
+.content-wrap {
+  .content {
+    .con-top {
+      padding: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-title {
+        color: var(--font-from-binance, #D2D4D7);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &-btn {
+        background: #F0B90B;
+        width: 49px;
+        height: 30px;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+
+        span {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: #fff;
+          display: block;
+          border-radius: 50%;
+          top: 3px;
+          right: 3px;
+          transition: .3s;
+        }
+
+        &:focus {
+          background: #525e6e;
+
+          span {
+            left: 3px;
+          }
+        }
+      }
+    }
+
+    .con-card {
+      border-top: 1px solid #29313D;
+      padding: 20px 1.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        justify-content: space-between;
+
+        .item {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+
+          label {
+            color: var(--font-from-binance, #D2D4D7);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 8px;
+            cursor: pointer;
+          }
+
+          select,
+          input {
+            background: var(--background-color);
+            border-radius: 8px;
+            border: 1px solid var(--unnamed, #29313D);
+            outline: none;
+            padding: 15px 20px;
+            color: var(--font-from-binance, #D2D4D7);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          select option {
+            cursor: pointer;
+            background: #29313D;
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+
+      &-btn {
+        border-radius: 8px;
+        background: var(--binance-color, linear-gradient(90deg, #F8D239 0%, #F0B90B 100%));
+        padding: 12px 24px;
+        width: 200px;
+        cursor: pointer;
+        color: var(--unnamed, #29313D);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: #29313D 1px solid;
+        transition: .3s ease-in-out all;
+
+        &:hover {
+          color: #F0B90B;
+          background: transparent;
+          border: 1px solid #F0B90B;
+        }
+      }
+    }
+
+    &:last-child .con-card .con-card-item .item {
+      width: 100%;
+    }
+  }
+}
+// setting section end
+
+// setting section media start
+@media (max-width:768px) {
+  .main{
+    padding: 12px;
+  }
+  .content-wrap .content .con-card {
+    border-top: none;
+    padding: 0 12px 12px;
+    
+
+    .con-card-item {
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        width: 100%;
+
+        label{
+          font-size: 12px;
+        }
+      }
+    }
+
+    .con-card-btn {
+      width: 100%;
+    }
+  }
+}
+// setting section media end

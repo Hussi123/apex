@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="leftbar">
+      <div class="logo left">
+        <img src="./images/Logo.png" alt="Kaedra LOGO">
+      </div>
+      <div id="icon-dispatcher">
+        <a href="index.html">
+          <img src="./images/icons/home-02.png" alt="">
+          <p>Dashboard</p>
+        </a>
+        <a href="log.html">
+          <img src="./images/icons/menu-02.png" alt="">
+          <p>Log</p>
+        </a>
+        <a href="wallet.html">
+          <img src="./images/icons/wallet-02.png" alt="">
+          <p>Wallet ID</p>
+        </a>
+        <a href="setting.html">
+          <img src="./images/icons/settings.png" alt="">
+          <p>Setting</p>
+        </a>
+        <a href="info.html">
+          <img src="./images/icons/info-square-01-contained.png" alt="">
+          <p>Info</p>
+        </a>
+        <a href="#1">
+          <img src="images/icons/game.png" alt="">
+          <p>EPIC</p>
+        </a>
+      </div>
+      <div class="status-bar">
+        <h4>Status</h4>
+        <label class="switch">
+          <input type="checkbox" id="check" style="display: none;" class="inp" checked>
+          <span class="span">
+            <button>on</button>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <main>
+      <nav>
+        <div class="title">
+          <div class="logo main">
+            <img src="./images/Logo.png" alt="Kaedra LOGO">
+          </div>
+          <p>
+            Log
+          </p>
+        </div>
+        <div class="menu-icons"></div>
+      </nav>
+      <div class="notepose"></div>
+
+      <!-- log content wrapper start -->
+      <div class="content-wrap log-wrap">
+        <div class="log__content-wrap">
+          <div class="log__content-top">
+            <button class="log__content-tab active" data-tab-target="#st">Log ST</button>
+            <button class="log__content-tab" data-tab-target="#error">Log Error</button>
+            <button class="log__content-tab" data-tab-target="#net">Log Net</button>
+          </div>
+
+          <div class="log__error">
+            <div class="log__error-content active" id="st" data-tab-content>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+
+            </div>
+
+            <div class="log__error-content" id="error" data-tab-content>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+
+            </div>
+
+            <div class="log__error-content" id="net" data-tab-content>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards raise their shield
+                all the time? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so blacksmiths heal
+                golems under 60 health? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have it so clerics heal guards
+                and players with hero of the village? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key villager stuff.Have Villagers have some
+                common sense? was corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff was corrected from null to its
+                default, SimpleCommentedConfig:{}. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Chance to drop equipment was
+                corrected from null to its default, 100.0. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards have some common
+                sense? was corrected from null to its default, false. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+              <p class="log__error-text">[17:58:30] [modloading-worker-0/WARN]
+                [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key guard stuff.Have Guards open doors? was
+                corrected from null to its default, true. </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- wallet content wrapper start -->
+
+
+
+      <p class="year">© 2023</p>
+      <div class="notepose"></div>
+    </main>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

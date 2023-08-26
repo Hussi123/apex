@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+:root {
+  --primary-color: #29313D;
+  --secondary-color: #ffffff;
+  --background-color: #21272F;
+  --light-color: #58D299;
+  --IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
+}
+
+@import"_wallet";
+@import"_setting";
+@import"_info";
+@import"_log";

@@ -1,0 +1,197 @@
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+// :root {
+//   --primary-color: #29313D;
+//   --secondary-color: #ffffff;
+//   --background-color: #21272F;
+//   --light-color: #58D299;
+//   --IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
+// }
+
+// wallet section start
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  background: var(--primary-color);
+  box-sizing: border-box;
+
+  .content {
+    width: 48.8%;
+    background: var(--background-color);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
+    &-top {
+      padding: 1.5em;
+
+      &-title {
+        text-align: center;
+        color: #ffffff;
+
+        h2 {
+          color: var(--font-from-binance, #D2D4D7);
+          font-size: 52px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        span {
+          color: var(--font-from-binance, #D2D4D7);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+
+      .mobile-satus-bar {
+        display: none;
+      }
+    }
+
+    &-form {
+      padding: 1.5em;
+      border-top: 1px solid #29313D;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        label {
+          color: var(--font-from-binance, #D2D4D7);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 8px;
+          cursor: pointer;
+        }
+
+        input {
+          padding: 1.2em;
+          background: transparent;
+          border-radius: 8px;
+          border: 1px solid var(--unnamed, #29313D);
+          color: var(--font-from-binance, #D2D4D7);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .desctop-satus-bar {
+      padding: 1.5em;
+      padding-top: 0;
+      margin-top: auto;
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+}
+// wallat section end
+
+// wallet section media start
+@media (max-width:1450px) {
+  .content-wrap .content {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:768px) {
+  .content-wrap {
+    background: transparent;
+    padding: 0;
+
+    .content {
+      background: var(--primary-color);
+
+      &-top {
+        display: flex;
+        justify-content: space-between !important;
+
+        &-title {
+          text-align: start;
+
+          h2 {
+            font-size: 36px;
+          }
+        }
+
+        .mobile-satus-bar {
+          display: inline-block;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+
+          h4 {
+            color: var(--font-from-binance, #D2D4D7);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          button {
+            background: var(--light-color);
+            padding: 4px 12px;
+            color: #FFF;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+              opacity: .9;
+            }
+          }
+        }
+      }
+
+      &-form {
+        border-top: 0;
+        padding-top: 0;
+
+        label{
+          font-size: 12px;
+        }
+
+        input {
+          background: var(--background-color);
+          border-radius: 1em;
+          padding: 13px 20px;
+        }
+      }
+
+      .desctop-satus-bar {
+        display: none;
+      }
+    }
+  }
+}
+// wallet section media end
