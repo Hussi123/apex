@@ -289,7 +289,7 @@ nav a {
     }
 
     .leftbar {
-        z-index: -999;
+        z-index: 9;
     }
 
     .logo.left img {
@@ -451,7 +451,7 @@ nav a {
         width: 100%;
         justify-content: space-between;
         left: 0;
-        z-index: 99999;
+        z-index: 9;
     }
 
     #icon-dispatcher a {
@@ -462,7 +462,7 @@ nav a {
 
     .leftbar {
         position: absolute;
-        z-index: 9999;
+        z-index: 9;
         width: max-content;
         height: max-content;
         top: 80px;
